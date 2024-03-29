@@ -29,3 +29,118 @@ body {
   border-left: 11px solid #1A0931;
   transition: 0.5s;
 }
+
+/* ======================= Cards ====================== */
+.cardBox {
+  position: relative;
+  left: 85px;
+  margin-left: 15px;
+  margin-top: 60px;
+  background-color: #FEFEFF;
+  border-radius: 5px;
+  border: 1px solid #E4E4E8;
+  height: fit-content;
+  width: 280px;
+  padding: 10px;
+}
+
+.year {
+  font-size: 12px;
+  color:rgba(93, 99, 114, 1);
+  margin-bottom: 3px;
+}
+
+.cardBox h4 {
+  color: rgba(93, 99, 114, 1);
+  font-weight: 600;  
+  font-size: 14px;
+  margin-top: center;
+}
+
+.inner-card {
+  margin-top: 22px;
+  background-color: #ffff;
+  border: 1px solid #E4E4E8;
+  padding: 15px;
+  color: rgba(47, 49, 54, 1);
+  border-radius: 5px;
+  font-size: 13px;
+  font-weight: 650;
+}
+
+.inner-card-2 {
+  margin-top: 9px;
+  background-color: #ffff;
+  border: 1px solid #E4E4E8;
+  width: center;
+  padding: 15px;
+  color: rgba(47, 49, 54, 1);
+  border-radius: 5px;
+  font-size: 13px;
+  font-weight: 650;
+}
+
+.inner-card .progress   {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+
+.inner-card-2 .progress   {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+
+.inner-card .progress .left-progress    {
+  display: flex;
+  gap: 8px;
+}
+
+.inner-card-2 .progress .left-progress    {
+  display: flex;
+  gap: 8px;
+}
+
+.inner-card .progress .left-progress p{
+  font-size: 11px;
+  color: #5D6372;
+  font-weight: 500;
+}
+
+.inner-card-2 .progress .left-progress p{
+  font-size: 11px;
+  color: #5D6372;
+  font-weight: 500;
+}
+
+.no-task{
+  border: none;
+  margin-top: 10px;
+  padding-left: 0;
+  padding-bottom: 0;
+}
+.no-task p{
+  opacity: .3;
+  font-weight: 500;
+}
+
+.cardBox p.new-tsk{
+  margin-top: 10px;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+}
+
+.cardBox p.new-tsk span{
+  font-size: 20px;
+  color: #5E20B3;
+}
+
+/* =============== Still Trying to Understand ============== */
+@media (width < 745px) {
+  .container{
+      flex-direction: column;
+      align-items: center;
+  }
+}
